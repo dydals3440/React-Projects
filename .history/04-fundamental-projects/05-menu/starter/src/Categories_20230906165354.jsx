@@ -7,8 +7,7 @@ const Categories = ({ categories, filterItems }) => {
             type='button'
             className='btn'
             key={category}
-            // 카테고리를 통과해야하기 떄문에 화살표함수 기능을 제공해야함.
-            onClick={() => filterItems(category)}
+            onClick={filterItems}
           >
             {category}
           </button>
