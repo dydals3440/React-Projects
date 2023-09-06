@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Title from './Title';
-import menu from './data';
-import Menu from './Menu';
+import menuItem from './data';
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(menu);
