@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Title from './Title';
 import menu from './data';
 import Menu from './Menu';
-import Categories from './Categories';
 
 // const tempCategories = menu.map((item) => item.category);
 // // 중복된 카테고리를 제외!
@@ -20,7 +19,6 @@ const App = () => {
     <main>
       <section className='menu'>
         <Title text='our menu' />
-        <Categories categories={categories} />
         <Menu items={menuItems} />
       </section>
     </main>

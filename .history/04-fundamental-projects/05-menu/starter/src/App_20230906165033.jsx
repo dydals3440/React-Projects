@@ -20,8 +20,8 @@ const App = () => {
     <main>
       <section className='menu'>
         <Title text='our menu' />
-        <Categories categories={categories} />
         <Menu items={menuItems} />
+        <Categories categories={categories} />
       </section>
     </main>
   );

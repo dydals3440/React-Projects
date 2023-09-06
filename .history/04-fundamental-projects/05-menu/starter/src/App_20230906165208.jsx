@@ -19,8 +19,8 @@ const App = () => {
   return (
     <main>
       <section className='menu'>
-        <Title text='our menu' />
         <Categories categories={categories} />
+        <Title text='our menu' />
         <Menu items={menuItems} />
       </section>
     </main>

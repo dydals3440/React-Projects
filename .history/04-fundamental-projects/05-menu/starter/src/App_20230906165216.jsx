@@ -20,7 +20,6 @@ const App = () => {
     <main>
       <section className='menu'>
         <Title text='our menu' />
-        <Categories categories={categories} />
         <Menu items={menuItems} />
       </section>
     </main>
