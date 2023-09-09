@@ -32,7 +32,7 @@ const App = () => {
     <section className='jobs-center'>
       {/* button container */}
       {/* job info */}
-      <JobInfo jobs={jobs} />
+      <JobInfo />
     </section>
   );
 };

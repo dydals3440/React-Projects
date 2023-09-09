@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import JobInfo from './components/JobInfo';
 
 const url = 'https://course-api.com/react-tabs-project';
 
@@ -28,12 +27,6 @@ const App = () => {
     );
   }
 
-  return (
-    <section className='jobs-center'>
-      {/* button container */}
-      {/* job info */}
-      <JobInfo jobs={jobs} />
-    </section>
-  );
+  return <section className='jobs-center'>{/* button container */}</section>;
 };
 export default App;
