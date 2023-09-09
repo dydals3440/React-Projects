@@ -32,12 +32,8 @@ const App = () => {
 
   return (
     <section className='jobs-center'>
-      {/* button container 여기서, currentItem의 인덱스를 정해줄꺼니 함수도 같이넘겨! */}
-      <ButtonContainer
-        jobs={jobs}
-        currentItem={currentItem}
-        setCurrentItem={setCurrentItem}
-      />
+      {/* button container */}
+      <ButtonContainer jobs={jobs} />
       {/* job info */}
       <JobInfo jobs={jobs} currentItem={currentItem} />
     </section>
