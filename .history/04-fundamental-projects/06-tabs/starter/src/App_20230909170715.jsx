@@ -7,26 +7,11 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
   // currentItem
-
-  const fetchJobs = async () => {
-    const response = await fetch(url);
-    const newJobs = await response.json();
-    setJobs(newJobs);
-    setIsLoading(false);
-  };
-
   useEffect(() => {
-    fetchJobs();
+    fetch(url)
+      .then((data) => data.json())
+      .then((res) => console.log(res));
   }, []);
-
-  if (isLoading) {
-    return (
-      <section className='jobs-center'>
-        <div className='loading'></div>
-      </section>
-    );
-  }
-
   return <h2>Tabs Starter</h2>;
 };
 export default App;

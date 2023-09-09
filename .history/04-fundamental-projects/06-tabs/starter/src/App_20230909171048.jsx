@@ -20,11 +20,7 @@ const App = () => {
   }, []);
 
   if (isLoading) {
-    return (
-      <section className='jobs-center'>
-        <div className='loading'></div>
-      </section>
-    );
+    return <div className='loading'></div>;
   }
 
   return <h2>Tabs Starter</h2>;

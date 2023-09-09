@@ -292,48 +292,4 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.item-info h5 {
-  font-weight: 500;
-}
-
-.item-price {
-  background: var(--primary-500);
-  color: var(--white);
-  padding: 0.25rem 0.5rem;
-  letter-spacing: var(--letterSpacing);
-  border-radius: var(--borderRadius);
-}
-
-.item-text {
-  line-height: 2;
-  color: var(--grey-500);
-}
-
-.section-center {
-  justify-items: center;
-}
-
-.menu-item {
-  max-width: 25rem;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    grid-template-columns: 1fr 1fr;
-    /* 텍스트 크기만큼, 텍스트 박스가 넓혀짐 이를 방지하기 위해 align-items: start */
-    align-items: start;
-  }
-}
-
-@media screen and (min-width: 1170x) {
-  .section-center {
-    width: 95vw;
-    grid-template-columns: 1fr 1fr;
-    /* 텍스트 크기만큼, 텍스트 박스가 넓혀짐 이를 방지하기 위해 align-items: start */
-    align-items: start;
-  }
 }

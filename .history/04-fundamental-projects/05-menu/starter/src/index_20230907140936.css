@@ -327,11 +327,9 @@ ul {
     /* 텍스트 크기만큼, 텍스트 박스가 넓혀짐 이를 방지하기 위해 align-items: start */
     align-items: start;
   }
-}
 
-@media screen and (min-width: 1170x) {
+  @media screen and (min-width: 992px) {
   .section-center {
-    width: 95vw;
     grid-template-columns: 1fr 1fr;
     /* 텍스트 크기만큼, 텍스트 박스가 넓혀짐 이를 방지하기 위해 align-items: start */
     align-items: start;

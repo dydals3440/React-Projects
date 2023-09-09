@@ -18,15 +18,7 @@ const App = () => {
   useEffect(() => {
     fetchJobs();
   }, []);
-
-  if (isLoading) {
-    return (
-      <section className='jobs-center'>
-        <div className='loading'></div>
-      </section>
-    );
-  }
-
+  console.log(jobs);
   return <h2>Tabs Starter</h2>;
 };
 export default App;
