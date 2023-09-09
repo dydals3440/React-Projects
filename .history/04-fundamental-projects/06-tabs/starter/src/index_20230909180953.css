@@ -317,31 +317,5 @@ ul {
 
 .job-desc p {
   color: var(--grey-700);
-  line-height: 1.5;
-}
-
-/* 두줄 */
-@media screen and (min-width: 992px) {
-  .jobs-center {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    column-gap: 4rem;
-  }
-  .btn-container {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .job-btn {
-    margin-bottom: 1rem;
-  }
-  .job-btn:hover {
-    color: var(--primary-500);
-    box-shadow: -2px 0 var(--primary-500);
-  }
-
-  .active-btn {
-    color: var(--primary-500);
-    box-shadow: -2px 0 var(--primary-500);
-  }
+  line-height: 1.5rem;
 }

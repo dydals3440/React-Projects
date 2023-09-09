@@ -335,13 +335,4 @@ ul {
   .job-btn {
     margin-bottom: 1rem;
   }
-  .job-btn:hover {
-    color: var(--primary-500);
-    box-shadow: -2px 0 var(--primary-500);
-  }
-
-  .active-btn {
-    color: var(--primary-500);
-    box-shadow: -2px 0 var(--primary-500);
-  }
 }

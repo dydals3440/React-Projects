@@ -337,11 +337,11 @@ ul {
   }
   .job-btn:hover {
     color: var(--primary-500);
-    box-shadow: -2px 0 var(--primary-500);
+    box-shadow: -2px 2px var(--primary-500);
   }
 
   .active-btn {
     color: var(--primary-500);
-    box-shadow: -2px 0 var(--primary-500);
+    box-shadow: 0 2px var(--primary-500);
   }
 }
