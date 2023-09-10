@@ -28,7 +28,6 @@ const Carousel = () => {
     let sliderId = setInterval(() => {
       nextSlide();
     }, 2000);
-    // 이걸 안해주면 여러번 버튼을 클릭했을때, 슬라이드에 오류가생김
     return () => {
       clearInterval(sliderId);
     };

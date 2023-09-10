@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { shortList, list, longList } from '../data';
 import { FaQuoteRight } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { useEffect } from 'react';
 
 const Carousel = () => {
   // list는 slider-container가 position:absolute이기때문에 다 겹쳐있음.
@@ -24,15 +23,6 @@ const Carousel = () => {
   };
 
   // Auto Slide
-  useEffect(() => {
-    let sliderId = setInterval(() => {
-      nextSlide();
-    }, 2000);
-    // 이걸 안해주면 여러번 버튼을 클릭했을때, 슬라이드에 오류가생김
-    return () => {
-      clearInterval(sliderId);
-    };
-  }, [currentPerson]);
 
   return (
     <section className='slider-container'>

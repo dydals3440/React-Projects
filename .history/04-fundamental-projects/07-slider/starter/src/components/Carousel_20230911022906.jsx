@@ -32,7 +32,7 @@ const Carousel = () => {
     return () => {
       clearInterval(sliderId);
     };
-  }, [currentPerson]);
+  }, []);
 
   return (
     <section className='slider-container'>
