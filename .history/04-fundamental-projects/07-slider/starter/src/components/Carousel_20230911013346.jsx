@@ -6,21 +6,10 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 const Carousel = () => {
   // list는 slider-container가 position:absolute이기때문에 다 겹쳐있음.
   const [people, setPeople] = useState(list);
-  // slider Next, Prev 기능을 위해 상태 추가
-  const [currentPerson, setCurrentPerson] = useState(0);
+  //
 
-  const prevSlide = () => {
-    setCurrentPerson((oldPerson) => {
-      const result = (oldPerson - 1 + people.length) % people.length;
-      return result;
-    });
-  };
-  const nextSlide = () => {
-    setCurrentPerson((oldPerson) => {
-      const result = (oldPerson + 1) % people.length;
-      return result;
-    });
-  };
+  const prevSlide = () => {};
+  const nextSlide = () => {};
   return (
     <section className='slider-container'>
       {people.map((person, personIndex) => {
@@ -28,11 +17,7 @@ const Carousel = () => {
         return (
           <article
             className='slide'
-            style={{
-              transform: `translateX(${100 * (personIndex - currentPerson)}%)`,
-              opacity: personIndex === currentPerson ? 1 : 0,
-              visibility: personIndex === currentPerson ? 'visible' : 'hidden',
-            }}
+            style={{ transform: `translateX(${100 * personIndex}%)` }}
             key={id}
           >
             <img src={image} alt={name} className='person-img' />

@@ -11,7 +11,7 @@ const Carousel = () => {
 
   const prevSlide = () => {
     setCurrentPerson((oldPerson) => {
-      const result = (oldPerson - 1 + people.length) % people.length;
+      const result = (oldPerson - 1) % people.length;
       return result;
     });
   };
@@ -30,8 +30,6 @@ const Carousel = () => {
             className='slide'
             style={{
               transform: `translateX(${100 * (personIndex - currentPerson)}%)`,
-              opacity: personIndex === currentPerson ? 1 : 0,
-              visibility: personIndex === currentPerson ? 'visible' : 'hidden',
             }}
             key={id}
           >
