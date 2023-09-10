@@ -15,7 +15,7 @@ const Carousel = () => {
         return (
           <article
             className='slide'
-            style={{ transform: `translateX(${100 * personIndex}%)` }}
+            style={{ transform: `translateX(${100 * personIndex})` }}
             key={id}
           >
             <img src={image} alt={name} className='person-img' />

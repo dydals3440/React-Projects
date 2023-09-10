@@ -261,7 +261,6 @@ ul {
   position: relative;
   /* 슬라이더 위치를 absolute로 설정할거기 떄문에, 높이가 있어야함! */
   height: 450px;
-  /* next-slide 속성에 translateX(+100%)로 해주는데, 이걸해줘야 창밖으로 넘어가도, 안보임 */
   /* overflow: hidden; */
 }
 
@@ -352,6 +351,5 @@ ul {
 
 /* 슬라이드 구현 */
 .next-slide {
-  /* 오른쪽으로 이동 +이기에 */
   transform: translateX(100%);
 }

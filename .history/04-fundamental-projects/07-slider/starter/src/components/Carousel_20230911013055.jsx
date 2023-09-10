@@ -10,14 +10,10 @@ const Carousel = () => {
   const nextSlide = () => {};
   return (
     <section className='slider-container'>
-      {people.map((person, personIndex) => {
+      {people.map((person) => {
         const { id, image, name, title, quote } = person;
         return (
-          <article
-            className='slide'
-            style={{ transform: `translateX(${100 * personIndex}%)` }}
-            key={id}
-          >
+          <article className='slide ' key={id}>
             <img src={image} alt={name} className='person-img' />
             <h5 className='name'>{name}</h5>
             <p className='title'>{title}</p>
