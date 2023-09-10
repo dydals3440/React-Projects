@@ -320,13 +320,6 @@ ul {
   place-items: center;
   border-color: transparent;
   border-radius: var(--borderRadius);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.prev:hover,
-.next:hover {
-  background: var(--primary-500);
 }
 
 .prev {
@@ -335,16 +328,4 @@ ul {
 
 .next {
   right: 0;
-}
-
-@media screen and (min-width: 800px) {
-  .text {
-    max-width: 45em;
-  }
-  .prev,
-  .next {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.5rem;
-  }
 }

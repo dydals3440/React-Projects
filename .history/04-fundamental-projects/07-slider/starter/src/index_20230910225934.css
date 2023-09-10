@@ -324,27 +324,10 @@ ul {
   transition: var(--transition);
 }
 
-.prev:hover,
-.next:hover {
-  background: var(--primary-500);
-}
-
 .prev {
   left: 0;
 }
 
 .next {
   right: 0;
-}
-
-@media screen and (min-width: 800px) {
-  .text {
-    max-width: 45em;
-  }
-  .prev,
-  .next {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.5rem;
-  }
 }
