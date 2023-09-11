@@ -12,9 +12,9 @@ const reducer = (state, action) => {
     return { ...state, cart: new Map() };
   }
   if (action.type === REMOVE) {
-    // Mutate 때문에 새 인스턴스를 만듬.
     const newCart = new Map(state.cart);
-    newCart.delete(action.payload.id);
+    const targetCart = newCart.filter(state.cart.id !== action.payload.id);
+    // newCart.delete(action.payload.id);
     return { ...state, cart: newCart };
   }
   throw new Error(`no matching action type : ${action.type}`);

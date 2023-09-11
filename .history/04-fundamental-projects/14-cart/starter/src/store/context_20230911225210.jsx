@@ -20,25 +20,14 @@ const AppContext = createContext();
 // 2.
 const initialState = {
   loading: false,
-  cart: new Map(cartItems.map((item) => [item.id, item])),
+  cart: new Map(),
 };
 
 export const AppProvider = ({ children }) => {
   // 초기상태 뿐만 아니라, reducer를 사용해서 상태를 변경할 수 있음.
   const [state, dispatch] = useReducer(reducer, initialState);
-
-  const clearCart = () => {
-    dispatch({ type: CLEAR_CART });
-  };
-
-  const remove = (id) => {
-    dispatch({ type: REMOVE, payload: { id } });
-  };
-
   return (
-    <AppContext.Provider value={{ ...state, clearCart, remove }}>
-      {children}
-    </AppContext.Provider>
+    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
   );
 };
 

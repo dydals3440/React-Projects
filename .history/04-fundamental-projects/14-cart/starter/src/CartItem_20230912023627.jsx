@@ -9,7 +9,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
         <h5>{title}</h5>
         <span className='item-price'>${price}</span>
         {/* remove button */}
-        <button className='remove-btn' onClick={() => remove(id)}>
+        <button className='remove-btn' onClick={() => console.log('remove')}>
           remove
         </button>
       </div>
