@@ -22,11 +22,6 @@ const reducer = (state, action) => {
     // Mutate 방지 새 객체 만듬
     const newCart = new Map(state.cart);
     const itemId = action.payload.id;
-    const item = newCart.get(itemId);
-    const newItem = { ...item, amount: item.amount + 1 };
-    // set은 key와 value만 넣어주면됨.
-    newCart.set(itemId, newItem);
-    return { ...state, cart: newCart };
   }
   throw new Error(`no matching action type : ${action.type}`);
 };

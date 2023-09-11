@@ -24,7 +24,6 @@ const reducer = (state, action) => {
     const itemId = action.payload.id;
     const item = newCart.get(itemId);
     const newItem = { ...item, amount: item.amount + 1 };
-    // set은 key와 value만 넣어주면됨.
     newCart.set(itemId, newItem);
     return { ...state, cart: newCart };
   }
