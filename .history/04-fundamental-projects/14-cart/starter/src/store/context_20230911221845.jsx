@@ -1,12 +1,11 @@
 import { useContext, useReducer, useEffect, createContext } from 'react';
-import reducer from './reducer';
 
 const AppContext = createContext();
 
-// // 1. reducer 파일에 로직 분리
-// const reducer = (state, action) => {
-//   return state;
-// };
+// 1.
+const reducer = (state, action) => {
+  return state;
+};
 
 // 2.
 const initialState = {
