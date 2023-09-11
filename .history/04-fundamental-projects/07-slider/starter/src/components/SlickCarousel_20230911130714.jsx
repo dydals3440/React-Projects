@@ -19,7 +19,7 @@ const SlickCarousel = () => {
   };
   return (
     <section className='slick-container'>
-      <h2>Single Item</h2>
+      <h2> Single Item</h2>
       <Slider {...settings}>
         {list.map((person) => {
           const { id, image, name, title, quote } = person;
