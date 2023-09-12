@@ -485,5 +485,8 @@ Sidebar CSS
 }
 
 .social-links a:hover {
-  color: var(--grey-600);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: var(--primary-500);
+  transition: var(--transition);
 }
