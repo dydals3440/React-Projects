@@ -365,11 +365,7 @@ Sidebar CSS
   box-shadow: var(--red-dark);
   transition: var(--transition);
   /* toggle logic */
-  transform: translateX(-100%);
-}
-
-.show-sidebar {
-  transform: translateX(0);
+  transform: translateX(-100%;);
 }
 
 @media screen and (min-width: 676px) {

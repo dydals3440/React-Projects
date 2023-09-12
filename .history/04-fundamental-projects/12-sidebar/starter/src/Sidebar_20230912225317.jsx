@@ -6,7 +6,7 @@ import { useGlobalContext } from './store/context';
 export const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
   return (
-    <aside className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
+    <aside className={isSidbarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
       <div className='sidebar-header'>
         <img src={logo} alt='Coding Addict' className='logo' />
         <button className='close-btn' onClick={closeSidebar}>
