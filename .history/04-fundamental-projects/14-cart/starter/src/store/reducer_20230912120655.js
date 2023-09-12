@@ -29,16 +29,20 @@ const reducer = (state, action) => {
     return { ...state, cart: newCart };
   }
   if (action.type === DECREASE) {
-    const newCart = new Map(state.cart);
-    const itemId = action.payload.id;
-    const item = newCart.get(itemId);
-    if (item.amount === 1) {
-      newCart.delete(itemId);
+    if (item.amount > 0) {
+      const newCart = new Map(state.cart);
+      const itemId = action.payload.id;
+      const item = newCart.get(itemId);
+      const newItem = { ...item, amount: item.amount - 1 };
+      //
+      newCart.set(itemId, newItem);
+      return { ...state, cart: newCart };
+    } else {
+      const newCart = new Map(state.cart);
+      newCart.delete(action.payload.id);
+      // ...state는 기존값을 복사하고 덮어씀
       return { ...state, cart: newCart };
     }
-    const newItem = { ...item, amount: item.amount - 1 };
-    newCart.set(itemId, newItem);
-    return { ...state, cart: newCart };
   }
 
   throw new Error(`no matching action type : ${action.type}`);
