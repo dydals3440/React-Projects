@@ -8,7 +8,7 @@ function App() {
   if (loading) {
     return (
       <main>
-        <div className='loading' style={{ marginTop: '6rem' }}></div>
+        <div className='loading'></div>
       </main>
     );
   }
