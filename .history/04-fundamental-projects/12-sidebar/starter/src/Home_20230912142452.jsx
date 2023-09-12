@@ -6,12 +6,7 @@ export const Home = () => {
   console.log(openSidebar);
   return (
     <main>
-      <button onClick={openSidebar} className='sidebar-toggle'>
-        <FaBars />
-      </button>
-      <button onClick={openModal} className='btn'>
-        show Modal
-      </button>
+      <button onClick={openSidebar} className='sidebar-toggle'></button>
     </main>
   );
 };

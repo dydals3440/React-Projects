@@ -279,7 +279,7 @@ main {
 }
 
 /* animation  */
-@keyframes bounce {
+@keyframes bonunce {
   0% {
     transform: scale(1);
   }
