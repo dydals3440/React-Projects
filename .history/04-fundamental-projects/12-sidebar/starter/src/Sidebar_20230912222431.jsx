@@ -13,7 +13,7 @@ export const Sidebar = () => {
           <FaTimes />
         </button>
       </div>
-      <ul className='links'>
+      <ul className='social-links'>
         {links.map((link) => {
           const { id, url, text, icon } = link;
           return (
@@ -22,16 +22,6 @@ export const Sidebar = () => {
                 {icon}
                 {text}
               </a>
-            </li>
-          );
-        })}
-      </ul>
-      <ul className='social-links'>
-        {social.map((link) => {
-          const { id, url, icon } = link;
-          return (
-            <li key={id}>
-              <a href={url}>{icon}</a>
             </li>
           );
         })}

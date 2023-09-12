@@ -314,13 +314,10 @@ Modal
 }
 
 /* modal show때만 보이게 */
-/* 이 클래스를 덮어씌워줌!, 나중에는 보이게 설정! */
 .show-modal {
   opacity: 1;
   visibility: visible;
   z-index: 10;
-  transition-property: opacity;
-  transition-duration: 2s;
 }
 
 .modal-container {

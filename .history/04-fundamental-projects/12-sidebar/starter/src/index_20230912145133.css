@@ -314,7 +314,7 @@ Modal
 }
 
 /* modal show때만 보이게 */
-/* 이 클래스를 덮어씌워줌!, 나중에는 보이게 설정! */
+/* 이 클래스를 추가로 주어서, 나중에는 보이게 설정! */
 .show-modal {
   opacity: 1;
   visibility: visible;
